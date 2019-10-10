@@ -1,0 +1,27 @@
+Ej 16 daalg
+
+1-2
+2-5-6
+3-4
+4-7
+5
+6-7
+7-2-3
+
+
+1-2-5 x
+
+Ahora hay que construir el grafo residual
+2-6
+3-4
+4-7
+6-7
+7-2-3
+
+
+2-6-7-2 x
+
+Y de nuevo...
+3-4
+4-7
+7-3
