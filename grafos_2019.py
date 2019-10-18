@@ -302,7 +302,7 @@ def time_dijkstra_m(n_graphs, n_nodes_ini, n_nodes_fin, step, sparse_factor=.25)
             for nodo in range(0,n_nodos):
                 dijkstra_m(diccionario_grafos[n_nodos][i],nodo)
         tiempo_fin = time.time()-tiempo_ini
-        lista_tiempos.append(tiempo_fin)
+        lista_tiempos.append(tiempo_fin/n_nodos)
 
     return lista_tiempos
 
@@ -333,7 +333,7 @@ def time_dijkstra_d(n_graphs, n_nodes_ini, n_nodes_fin, step, sparse_factor=.25)
             for nodo in range(0,n_nodos):
                 dijkstra_d(diccionario_grafos[n_nodos][i],nodo)
         tiempo_fin = time.time()-tiempo_ini
-        lista_tiempos.append(tiempo_fin)
+        lista_tiempos.append(tiempo_fin/n_nodos)
 
     return lista_tiempos
 
@@ -398,7 +398,7 @@ def time_dijkstra_nx(n_graphs, n_nodes_ini, n_nodes_fin, step, sparse_factor=.25
             for nodo in range(0,n_nodos):
                 nx.single_source_dijkstra(diccionario_grafos[n_nodos][i],nodo)
         tiempo_fin = time.time()-tiempo_ini
-        lista_tiempos.append(tiempo_fin)
+        lista_tiempos.append(tiempo_fin/n_nodos)
 
     return lista_tiempos
 
