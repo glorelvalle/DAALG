@@ -1,5 +1,6 @@
 import sys
 import time
+import os
 import matplotlib.pyplot as plt
 import random
 import numpy as np
@@ -9,6 +10,15 @@ import queue as qe
 import time
 import networkx as nx
 from sklearn.linear_model import LinearRegression
+
+"""
+Practica 1
+
+Adrian Navas Ajenjo
+Gloria del Valle Cano
+
+Pareja 10
+"""
 
 def rand_matr_pos_graph(n_nodes, sparse_factor, max_weight=50., decimals=0):
     """

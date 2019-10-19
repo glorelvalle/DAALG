@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module grafos10</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>grafos10</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/gloriadelvalle/Desktop/DAALG/grafos10.py">/Users/gloriadelvalle/Desktop/DAALG/grafos10.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="gzip.html">gzip</a><br>
+<a href="numpy.html">numpy</a><br>
+<a href="networkx.html">networkx</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="pickle.html">pickle</a><br>
+<a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+</td><td width="25%" valign=top><a href="queue.html">queue</a><br>
+<a href="random.html">random</a><br>
+<a href="sys.html">sys</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-TGF_2_d_g"><strong>TGF_2_d_g</strong></a>(f_name)</dt><dd><tt>Funcion&nbsp;que&nbsp;pasa&nbsp;un&nbsp;grafo&nbsp;en&nbsp;formato&nbsp;TGF&nbsp;a&nbsp;un&nbsp;diccionario.<br>
+&nbsp;<br>
+:param&nbsp;f_name:&nbsp;nombre&nbsp;del&nbsp;fichero&nbsp;donde&nbsp;se&nbsp;guardo&nbsp;el&nbsp;grafo</tt></dd></dl>
+ <dl><dt><a name="-check_sparse_factor"><strong>check_sparse_factor</strong></a>(n_grafos, n_nodes, sparse_factor)</dt><dd><tt>Funcion&nbsp;que&nbsp;genera&nbsp;las&nbsp;matrices&nbsp;de&nbsp;un&nbsp;numero&nbsp;de&nbsp;grafos&nbsp;aleatorios&nbsp;con&nbsp;un&nbsp;numero&nbsp;de&nbsp;nodos&nbsp;y&nbsp;un&nbsp;sparse&nbsp;factor.<br>
+Devuelve&nbsp;la&nbsp;media&nbsp;de&nbsp;los&nbsp;sparse&nbsp;factor&nbsp;reales&nbsp;de&nbsp;las&nbsp;matrices&nbsp;de&nbsp;los&nbsp;grafos&nbsp;generadas.<br>
+&nbsp;<br>
+:param&nbsp;n_grafos:&nbsp;numero&nbsp;de&nbsp;grafos<br>
+:param&nbsp;n_nodes:&nbsp;numero&nbsp;de&nbsp;nodos&nbsp;del&nbsp;grafo<br>
+:param&nbsp;sparse_factor:&nbsp;proporcion&nbsp;de&nbsp;ramas</tt></dd></dl>
+ <dl><dt><a name="-cuenta_ramas"><strong>cuenta_ramas</strong></a>(m_g)</dt><dd><tt>Funcion&nbsp;que&nbsp;cuenta&nbsp;las&nbsp;ramas&nbsp;de&nbsp;un&nbsp;grafo.<br>
+Devuelve&nbsp;el&nbsp;numero&nbsp;de&nbsp;ramas.<br>
+&nbsp;<br>
+:param&nbsp;m_g:&nbsp;matriz&nbsp;de&nbsp;adyacencia&nbsp;del&nbsp;grafo</tt></dd></dl>
+ <dl><dt><a name="-d_g_2_TGF"><strong>d_g_2_TGF</strong></a>(d_g, f_name)</dt><dd><tt>Funcion&nbsp;que&nbsp;pasa&nbsp;un&nbsp;grafo&nbsp;en&nbsp;forma&nbsp;de&nbsp;diccionario&nbsp;a&nbsp;formato&nbsp;TGF.<br>
+&nbsp;<br>
+:param&nbsp;d_g:&nbsp;diccionario<br>
+:param&nbsp;f_name:&nbsp;nombre&nbsp;del&nbsp;fichero&nbsp;donde&nbsp;guardamos&nbsp;el&nbsp;grafo</tt></dd></dl>
+ <dl><dt><a name="-d_g_2_m_g"><strong>d_g_2_m_g</strong></a>(d_g)</dt><dd><tt>Funcion&nbsp;que&nbsp;convierte&nbsp;el&nbsp;diccionario&nbsp;del&nbsp;grafo&nbsp;a&nbsp;una&nbsp;matriz&nbsp;de&nbsp;adyacencia.<br>
+Devuelve&nbsp;la&nbsp;matriz&nbsp;de&nbsp;adyacencia&nbsp;resultante.<br>
+&nbsp;<br>
+:param&nbsp;d_g:&nbsp;diccionario&nbsp;del&nbsp;grafo</tt></dd></dl>
+ <dl><dt><a name="-d_g_2_nx_g"><strong>d_g_2_nx_g</strong></a>(d_g)</dt><dd><tt>Funcion&nbsp;que&nbsp;pasa&nbsp;un&nbsp;grafo&nbsp;en&nbsp;formato&nbsp;de&nbsp;diccionario&nbsp;a&nbsp;otro&nbsp;de&nbsp;Networkx.<br>
+&nbsp;<br>
+:param&nbsp;d_g:&nbsp;diccionario</tt></dd></dl>
+ <dl><dt><a name="-dijkstra_d"><strong>dijkstra_d</strong></a>(d_g, u)</dt><dd><tt>Funcion&nbsp;que&nbsp;aplica&nbsp;el&nbsp;algoritmo&nbsp;de&nbsp;Dijkstra&nbsp;a&nbsp;un&nbsp;grafo&nbsp;en&nbsp;formato&nbsp;de&nbsp;diccionario&nbsp;a&nbsp;partir&nbsp;de&nbsp;un&nbsp;nodo&nbsp;inicial.<br>
+Devuelve&nbsp;un&nbsp;diccionario&nbsp;con&nbsp;las&nbsp;distancias&nbsp;mínimas&nbsp;al&nbsp;resto&nbsp;de&nbsp;nodos&nbsp;y&nbsp;otro&nbsp;que&nbsp;contiene&nbsp;el&nbsp;padre&nbsp;correspondiente<br>
+a&nbsp;cada&nbsp;vértice&nbsp;accesible.<br>
+&nbsp;<br>
+:param&nbsp;d_g:&nbsp;diccionario<br>
+:param&nbsp;u:&nbsp;nodo&nbsp;inicial</tt></dd></dl>
+ <dl><dt><a name="-dijkstra_m"><strong>dijkstra_m</strong></a>(m_g, u)</dt><dd><tt>Funcion&nbsp;que&nbsp;aplica&nbsp;el&nbsp;algoritmo&nbsp;de&nbsp;Dijkstra&nbsp;a&nbsp;un&nbsp;grafo&nbsp;en&nbsp;formato&nbsp;de&nbsp;matriz&nbsp;de&nbsp;adyacencia&nbsp;a&nbsp;partir&nbsp;de&nbsp;un&nbsp;nodo&nbsp;inicial.<br>
+Devuelve&nbsp;un&nbsp;diccionario&nbsp;con&nbsp;las&nbsp;distancias&nbsp;mínimas&nbsp;al&nbsp;resto&nbsp;de&nbsp;nodos&nbsp;y&nbsp;otro&nbsp;que&nbsp;contiene&nbsp;el&nbsp;padre&nbsp;correspondiente<br>
+a&nbsp;cada&nbsp;vértice&nbsp;accesible.<br>
+&nbsp;<br>
+:param&nbsp;m_g:&nbsp;matriz&nbsp;de&nbsp;adyacencia<br>
+:param&nbsp;u:&nbsp;nodo&nbsp;inicial</tt></dd></dl>
+ <dl><dt><a name="-fit_plot"><strong>fit_plot</strong></a>(l, func_2_fit, size_ini, size_fin, step, legend)</dt><dd><tt>Funcion&nbsp;que&nbsp;entrena&nbsp;un&nbsp;modelo&nbsp;lineal&nbsp;con&nbsp;unas&nbsp;listas&nbsp;de&nbsp;tiempos&nbsp;y&nbsp;devuelve&nbsp;el&nbsp;real&nbsp;y&nbsp;la&nbsp;prediccion&nbsp;de&nbsp;cada&nbsp;uno.<br>
+&nbsp;<br>
+:param&nbsp;l:&nbsp;lista<br>
+:param&nbsp;func_2_fit:&nbsp;funcion&nbsp;en&nbsp;concreto&nbsp;a&nbsp;entrenar,&nbsp;sera&nbsp;en&nbsp;nuestro&nbsp;caso&nbsp;n**2log(n)<br>
+:param&nbsp;size_ini:&nbsp;tamaño&nbsp;inicial<br>
+:param&nbsp;size_fin:&nbsp;tamaño&nbsp;final<br>
+:param&nbsp;step:&nbsp;incremento<br>
+:param&nbsp;legend:&nbsp;parametro&nbsp;que&nbsp;hemos&nbsp;añadido&nbsp;para&nbsp;diferenciar&nbsp;las&nbsp;leyendas&nbsp;segun&nbsp;el&nbsp;formato&nbsp;en&nbsp;el&nbsp;que&nbsp;se&nbsp;pase&nbsp;el&nbsp;grafo</tt></dd></dl>
+ <dl><dt><a name="-m_g_2_d_g"><strong>m_g_2_d_g</strong></a>(m_g)</dt><dd><tt>Funcion&nbsp;que&nbsp;convierte&nbsp;la&nbsp;matriz&nbsp;de&nbsp;adyacencia&nbsp;del&nbsp;grafo&nbsp;en&nbsp;un&nbsp;diccionario.<br>
+Devuelve&nbsp;un&nbsp;diccionario&nbsp;con&nbsp;cada&nbsp;nodo&nbsp;(k)&nbsp;asignado&nbsp;a&nbsp;otro&nbsp;diccionario&nbsp;(v)&nbsp;con&nbsp;los&nbsp;nodos&nbsp;destino&nbsp;(k)<br>
+y&nbsp;el&nbsp;peso&nbsp;relacionado&nbsp;(v).<br>
+&nbsp;<br>
+:param&nbsp;m_g:&nbsp;matriz&nbsp;de&nbsp;adyacencia&nbsp;del&nbsp;grafo</tt></dd></dl>
+ <dl><dt><a name="-m_g_sparse_factor"><strong>m_g_sparse_factor</strong></a>(m_g)</dt><dd><tt>Funcion&nbsp;auxiliar&nbsp;de&nbsp;check_sparse_factor.<br>
+Devuelve&nbsp;el&nbsp;calculo&nbsp;de&nbsp;sparse&nbsp;factor&nbsp;de&nbsp;cada&nbsp;grafo.<br>
+&nbsp;<br>
+:param&nbsp;m_g:&nbsp;matriz&nbsp;de&nbsp;adyacencia&nbsp;del&nbsp;grafo</tt></dd></dl>
+ <dl><dt><a name="-min_paths"><strong>min_paths</strong></a>(d_prev)</dt><dd><tt>Funcion&nbsp;que&nbsp;devuelve&nbsp;el&nbsp;diccionario&nbsp;con&nbsp;el&nbsp;camino&nbsp;minimo&nbsp;desde&nbsp;el&nbsp;nodo&nbsp;inicial&nbsp;a&nbsp;otro&nbsp;nodo<br>
+&nbsp;<br>
+:param&nbsp;d_prev:&nbsp;diccionario&nbsp;que&nbsp;contiene&nbsp;el&nbsp;padre&nbsp;correspondiente&nbsp;a&nbsp;cada&nbsp;vértice&nbsp;accesible.</tt></dd></dl>
+ <dl><dt><a name="-n2_log_n"><strong>n2_log_n</strong></a>(n)</dt></dl>
+ <dl><dt><a name="-nx_g_2_d_g"><strong>nx_g_2_d_g</strong></a>(nx_g)</dt><dd><tt>Funcion&nbsp;que&nbsp;pasa&nbsp;un&nbsp;grafo&nbsp;en&nbsp;formato&nbsp;Networkx&nbsp;a&nbsp;otro&nbsp;en&nbsp;formato&nbsp;diccionario.<br>
+&nbsp;<br>
+:param&nbsp;nx_g:&nbsp;grafo&nbsp;en&nbsp;formato&nbsp;Networkx</tt></dd></dl>
+ <dl><dt><a name="-rand_matr_pos_graph"><strong>rand_matr_pos_graph</strong></a>(n_nodes, sparse_factor, max_weight=50.0, decimals=0)</dt><dd><tt>Funcion&nbsp;que&nbsp;genera&nbsp;grafos&nbsp;de&nbsp;manera&nbsp;aleatoria.<br>
+Devuelve&nbsp;la&nbsp;matriz&nbsp;de&nbsp;adyacencia&nbsp;de&nbsp;un&nbsp;grafo&nbsp;dirigido&nbsp;ponderado.<br>
+&nbsp;<br>
+:param&nbsp;n_nodes:&nbsp;numero&nbsp;de&nbsp;nodos<br>
+:param&nbsp;sparse_factor:&nbsp;proporcion&nbsp;de&nbsp;ramas<br>
+:param&nbsp;max_weight:&nbsp;peso&nbsp;maximo<br>
+:param&nbsp;decimals:&nbsp;numero&nbsp;de&nbsp;decimales</tt></dd></dl>
+ <dl><dt><a name="-read_object"><strong>read_object</strong></a>(f_name, save_path='.')</dt><dd><tt>Funcion&nbsp;que&nbsp;lee&nbsp;un&nbsp;objeto.<br>
+Devuelve&nbsp;el&nbsp;objeto&nbsp;en&nbsp;cuestion.<br>
+&nbsp;<br>
+:param&nbsp;f_name:&nbsp;nombre&nbsp;del&nbsp;archivo<br>
+:param&nbsp;save_path:&nbsp;ruta&nbsp;del&nbsp;fichero</tt></dd></dl>
+ <dl><dt><a name="-save_object"><strong>save_object</strong></a>(obj, f_name='obj.pklz', save_path='.')</dt><dd><tt>Funcion&nbsp;que&nbsp;guarda&nbsp;un&nbsp;objeto&nbsp;en&nbsp;un&nbsp;dump&nbsp;file.<br>
+Realiza&nbsp;el&nbsp;volcado&nbsp;en&nbsp;cuestion,&nbsp;en&nbsp;este&nbsp;caso,&nbsp;de&nbsp;un&nbsp;grafo.<br>
+&nbsp;<br>
+:param&nbsp;obj:&nbsp;objeto&nbsp;a&nbsp;guardar<br>
+:param&nbsp;f_name:&nbsp;nombre&nbsp;del&nbsp;objeto<br>
+:param&nbsp;save_path:&nbsp;ruta&nbsp;del&nbsp;archivo</tt></dd></dl>
+ <dl><dt><a name="-time_dijkstra_d"><strong>time_dijkstra_d</strong></a>(n_graphs, n_nodes_ini, n_nodes_fin, step, sparse_factor=0.25)</dt><dd><tt>Funcion&nbsp;que&nbsp;calcula&nbsp;el&nbsp;tiempo&nbsp;de&nbsp;aplicar&nbsp;Dijkstra&nbsp;a&nbsp;un&nbsp;grafo&nbsp;dado&nbsp;en&nbsp;formato&nbsp;diccionario.<br>
+Devuelve&nbsp;una&nbsp;lista&nbsp;de&nbsp;tiempos&nbsp;para&nbsp;cada&nbsp;grafo&nbsp;al&nbsp;que&nbsp;se&nbsp;le&nbsp;ha&nbsp;aplicado&nbsp;el&nbsp;algoritmo.<br>
+&nbsp;<br>
+:param&nbsp;n_graphs:&nbsp;numero&nbsp;de&nbsp;grafos&nbsp;a&nbsp;generar<br>
+:param&nbsp;n_nodes_ini:&nbsp;num&nbsp;de&nbsp;nodos&nbsp;inicial<br>
+:param&nbsp;n_nodes_fin:&nbsp;num&nbsp;de&nbsp;nodos&nbsp;final<br>
+:param&nbsp;step:&nbsp;incremento<br>
+:param&nbsp;sparse_factor:&nbsp;factor&nbsp;proporcion&nbsp;de&nbsp;ramas</tt></dd></dl>
+ <dl><dt><a name="-time_dijkstra_m"><strong>time_dijkstra_m</strong></a>(n_graphs, n_nodes_ini, n_nodes_fin, step, sparse_factor=0.25)</dt><dd><tt>Funcion&nbsp;que&nbsp;calcula&nbsp;el&nbsp;tiempo&nbsp;de&nbsp;aplicar&nbsp;Dijkstra&nbsp;a&nbsp;un&nbsp;grafo&nbsp;dado&nbsp;en&nbsp;formato&nbsp;de&nbsp;matriz&nbsp;de&nbsp;adyacencia.<br>
+Devuelve&nbsp;una&nbsp;lista&nbsp;de&nbsp;tiempos&nbsp;para&nbsp;cada&nbsp;grafo&nbsp;al&nbsp;que&nbsp;se&nbsp;le&nbsp;ha&nbsp;aplicado&nbsp;el&nbsp;algoritmo.<br>
+&nbsp;<br>
+:param&nbsp;n_graphs:&nbsp;numero&nbsp;de&nbsp;grafos&nbsp;a&nbsp;generar<br>
+:param&nbsp;n_nodes_ini:&nbsp;num&nbsp;de&nbsp;nodos&nbsp;inicial<br>
+:param&nbsp;n_nodes_fin:&nbsp;num&nbsp;de&nbsp;nodos&nbsp;final<br>
+:param&nbsp;step:&nbsp;incremento<br>
+:param&nbsp;sparse_factor:&nbsp;factor&nbsp;proporcion&nbsp;de&nbsp;ramas</tt></dd></dl>
+ <dl><dt><a name="-time_dijkstra_nx"><strong>time_dijkstra_nx</strong></a>(n_graphs, n_nodes_ini, n_nodes_fin, step, sparse_factor=0.25)</dt><dd><tt>Funcion&nbsp;que&nbsp;calcula&nbsp;el&nbsp;tiempo&nbsp;de&nbsp;aplicar&nbsp;Dijkstra&nbsp;a&nbsp;un&nbsp;grafo&nbsp;dado&nbsp;en&nbsp;formato&nbsp;de&nbsp;Networkx.<br>
+Devuelve&nbsp;una&nbsp;lista&nbsp;de&nbsp;tiempos&nbsp;para&nbsp;cada&nbsp;grafo&nbsp;al&nbsp;que&nbsp;se&nbsp;le&nbsp;ha&nbsp;aplicado&nbsp;el&nbsp;algoritmo.<br>
+&nbsp;<br>
+:param&nbsp;n_graphs:&nbsp;numero&nbsp;de&nbsp;grafos&nbsp;a&nbsp;generar<br>
+:param&nbsp;n_nodes_ini:&nbsp;num&nbsp;de&nbsp;nodos&nbsp;inicial<br>
+:param&nbsp;n_nodes_fin:&nbsp;num&nbsp;de&nbsp;nodos&nbsp;final<br>
+:param&nbsp;step:&nbsp;incremento<br>
+:param&nbsp;sparse_factor:&nbsp;factor&nbsp;proporcion&nbsp;de&nbsp;ramas</tt></dd></dl>
+</td></tr></table>
+</body></html>
