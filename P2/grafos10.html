@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module grafos10</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>grafos10</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/giogiasvalley/Desktop/Computer%20Science/Subjects/DAALG/P2/grafos10.py">/Users/giogiasvalley/Desktop/Computer Science/Subjects/DAALG/P2/grafos10.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="gzip.html">gzip</a><br>
+<a href="numpy.html">numpy</a><br>
+<a href="networkx.html">networkx</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="pickle.html">pickle</a><br>
+<a href="queue.html">queue</a><br>
+</td><td width="25%" valign=top><a href="random.html">random</a><br>
+<a href="sys.html">sys</a><br>
+<a href="time.html">time</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-TGF_2_d_g"><strong>TGF_2_d_g</strong></a>(f_name)</dt><dd><tt>Funcion&nbsp;que&nbsp;pasa&nbsp;un&nbsp;grafo&nbsp;en&nbsp;formato&nbsp;TGF&nbsp;a&nbsp;un&nbsp;diccionario.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;f_name:&nbsp;nombre&nbsp;del&nbsp;fichero&nbsp;donde&nbsp;se&nbsp;guardo&nbsp;el&nbsp;grafo</tt></dd></dl>
+ <dl><dt><a name="-check_pda"><strong>check_pda</strong></a>(p, o, a)</dt><dd><tt>Funcion&nbsp;que&nbsp;obtiene&nbsp;los&nbsp;puntos&nbsp;de&nbsp;articulacion&nbsp;de&nbsp;un&nbsp;grafo<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;p:&nbsp;diccionario&nbsp;de&nbsp;padres<br>
+&nbsp;&nbsp;&nbsp;&nbsp;o:&nbsp;diccionario&nbsp;de&nbsp;orden&nbsp;de&nbsp;cada&nbsp;nodo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;a:&nbsp;diccionario&nbsp;de&nbsp;ascenso&nbsp;de&nbsp;cada&nbsp;nodo<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;pas:&nbsp;lista&nbsp;con&nbsp;los&nbsp;nodos&nbsp;que&nbsp;son&nbsp;puntos&nbsp;de&nbsp;articulacion</tt></dd></dl>
+ <dl><dt><a name="-check_sparse_factor"><strong>check_sparse_factor</strong></a>(n_grafos, n_nodes, sparse_factor)</dt><dd><tt>Funcion&nbsp;que&nbsp;genera&nbsp;las&nbsp;matrices&nbsp;de&nbsp;un&nbsp;numero&nbsp;de&nbsp;grafos&nbsp;aleatorios&nbsp;con&nbsp;un&nbsp;numero&nbsp;de&nbsp;nodos&nbsp;y&nbsp;un&nbsp;sparse&nbsp;factor.<br>
+Devuelve&nbsp;la&nbsp;media&nbsp;de&nbsp;los&nbsp;sparse&nbsp;factor&nbsp;reales&nbsp;de&nbsp;las&nbsp;matrices&nbsp;de&nbsp;los&nbsp;grafos&nbsp;generadas.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_grafos:&nbsp;numero&nbsp;de&nbsp;grafos<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_nodes:&nbsp;numero&nbsp;de&nbsp;nodos&nbsp;del&nbsp;grafo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sparse_factor:&nbsp;proporcion&nbsp;de&nbsp;ramas</tt></dd></dl>
+ <dl><dt><a name="-cuenta_ramas"><strong>cuenta_ramas</strong></a>(m_g)</dt><dd><tt>Funcion&nbsp;que&nbsp;cuenta&nbsp;las&nbsp;ramas&nbsp;de&nbsp;un&nbsp;grafo.<br>
+Devuelve&nbsp;el&nbsp;numero&nbsp;de&nbsp;ramas.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;m_g:&nbsp;matriz&nbsp;de&nbsp;adyacencia&nbsp;del&nbsp;grafo</tt></dd></dl>
+ <dl><dt><a name="-d_g_2_TGF"><strong>d_g_2_TGF</strong></a>(d_g, f_name)</dt><dd><tt>Funcion&nbsp;que&nbsp;pasa&nbsp;un&nbsp;grafo&nbsp;en&nbsp;forma&nbsp;de&nbsp;diccionario&nbsp;a&nbsp;formato&nbsp;TGF.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_g&nbsp;(diccionario)&nbsp;diccionario<br>
+&nbsp;&nbsp;&nbsp;&nbsp;f_name:&nbsp;nombre&nbsp;del&nbsp;fichero&nbsp;donde&nbsp;guardamos&nbsp;el&nbsp;grafo</tt></dd></dl>
+ <dl><dt><a name="-d_g_2_m_g"><strong>d_g_2_m_g</strong></a>(d_g)</dt><dd><tt>Funcion&nbsp;que&nbsp;convierte&nbsp;el&nbsp;diccionario&nbsp;del&nbsp;grafo&nbsp;a&nbsp;una&nbsp;matriz&nbsp;de&nbsp;adyacencia.<br>
+Devuelve&nbsp;la&nbsp;matriz&nbsp;de&nbsp;adyacencia&nbsp;resultante.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_g&nbsp;(diccionario)&nbsp;diccionario&nbsp;del&nbsp;grafo</tt></dd></dl>
+ <dl><dt><a name="-d_g_2_nx_g"><strong>d_g_2_nx_g</strong></a>(d_g)</dt><dd><tt>Funcion&nbsp;que&nbsp;pasa&nbsp;un&nbsp;grafo&nbsp;en&nbsp;formato&nbsp;de&nbsp;diccionario&nbsp;a&nbsp;otro&nbsp;de&nbsp;Networkx.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_g&nbsp;(diccionario)&nbsp;diccionario</tt></dd></dl>
+ <dl><dt><a name="-dijkstra_d"><strong>dijkstra_d</strong></a>(d_g, u)</dt><dd><tt>Funcion&nbsp;que&nbsp;aplica&nbsp;el&nbsp;algoritmo&nbsp;de&nbsp;Dijkstra&nbsp;a&nbsp;un&nbsp;grafo&nbsp;en&nbsp;formato&nbsp;de&nbsp;diccionario&nbsp;a&nbsp;partir&nbsp;de&nbsp;un&nbsp;nodo&nbsp;inicial.<br>
+Devuelve&nbsp;un&nbsp;diccionario&nbsp;con&nbsp;las&nbsp;distancias&nbsp;mínimas&nbsp;al&nbsp;resto&nbsp;de&nbsp;nodos&nbsp;y&nbsp;otro&nbsp;que&nbsp;contiene&nbsp;el&nbsp;padre&nbsp;correspondiente<br>
+a&nbsp;cada&nbsp;vértice&nbsp;accesible.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_g&nbsp;(diccionario)&nbsp;diccionario<br>
+&nbsp;&nbsp;&nbsp;&nbsp;u:&nbsp;nodo&nbsp;inicial</tt></dd></dl>
+ <dl><dt><a name="-dijkstra_m"><strong>dijkstra_m</strong></a>(m_g, u)</dt><dd><tt>Funcion&nbsp;que&nbsp;aplica&nbsp;el&nbsp;algoritmo&nbsp;de&nbsp;Dijkstra&nbsp;a&nbsp;un&nbsp;grafo&nbsp;en&nbsp;formato&nbsp;de&nbsp;matriz&nbsp;de&nbsp;adyacencia&nbsp;a&nbsp;partir&nbsp;de&nbsp;un&nbsp;nodo&nbsp;inicial.<br>
+Devuelve&nbsp;un&nbsp;diccionario&nbsp;con&nbsp;las&nbsp;distancias&nbsp;mínimas&nbsp;al&nbsp;resto&nbsp;de&nbsp;nodos&nbsp;y&nbsp;otro&nbsp;que&nbsp;contiene&nbsp;el&nbsp;padre&nbsp;correspondiente<br>
+a&nbsp;cada&nbsp;vértice&nbsp;accesible.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;m_g:&nbsp;matriz&nbsp;de&nbsp;adyacencia<br>
+&nbsp;&nbsp;&nbsp;&nbsp;u:&nbsp;nodo&nbsp;inicial</tt></dd></dl>
+ <dl><dt><a name="-find"><strong>find</strong></a>(ind, d_cd, fl_cc)</dt><dd><tt>Funcion&nbsp;que&nbsp;busca&nbsp;el&nbsp;representante&nbsp;de&nbsp;un&nbsp;nodo&nbsp;en&nbsp;el&nbsp;conjunto&nbsp;disjunto<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ind:&nbsp;nodo&nbsp;a&nbsp;buscar<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_cd:&nbsp;conjunto&nbsp;disjunto&nbsp;donde&nbsp;queremos&nbsp;buscar<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fl_cc:&nbsp;True&nbsp;si&nbsp;queremos&nbsp;aplicar&nbsp;compresion&nbsp;de&nbsp;caminos,&nbsp;False&nbsp;si&nbsp;no<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;rep:&nbsp;representante&nbsp;del&nbsp;nodo&nbsp;buscado</tt></dd></dl>
+ <dl><dt><a name="-fit_plot"><strong>fit_plot</strong></a>(l, func_2_fit, size_ini, size_fin, step, legend)</dt><dd><tt>Funcion&nbsp;que&nbsp;entrena&nbsp;un&nbsp;modelo&nbsp;lineal&nbsp;con&nbsp;unas&nbsp;listas&nbsp;de&nbsp;tiempos&nbsp;y&nbsp;devuelve&nbsp;el&nbsp;real&nbsp;y&nbsp;la&nbsp;prediccion&nbsp;de&nbsp;cada&nbsp;uno.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;l:&nbsp;lista<br>
+&nbsp;&nbsp;&nbsp;&nbsp;func_2_fit:&nbsp;funcion&nbsp;en&nbsp;concreto&nbsp;a&nbsp;entrenar,&nbsp;sera&nbsp;en&nbsp;nuestro&nbsp;caso&nbsp;n**2log(n)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;size_ini:&nbsp;tamaño&nbsp;inicial<br>
+&nbsp;&nbsp;&nbsp;&nbsp;size_fin:&nbsp;tamaño&nbsp;final<br>
+&nbsp;&nbsp;&nbsp;&nbsp;step:&nbsp;incremento<br>
+&nbsp;&nbsp;&nbsp;&nbsp;legend:&nbsp;parametro&nbsp;que&nbsp;hemos&nbsp;añadido&nbsp;para&nbsp;diferenciar&nbsp;las&nbsp;leyendas&nbsp;segun&nbsp;el&nbsp;formato&nbsp;en&nbsp;el&nbsp;que&nbsp;se&nbsp;pase&nbsp;el&nbsp;grafo</tt></dd></dl>
+ <dl><dt><a name="-graph_2_multigraph"><strong>graph_2_multigraph</strong></a>(d_g)</dt><dd><tt>Funcion&nbsp;que&nbsp;crea&nbsp;a&nbsp;partir&nbsp;de&nbsp;una&nbsp;matriz&nbsp;de&nbsp;adyacencia,&nbsp;la&nbsp;matriz&nbsp;de&nbsp;adyacencia&nbsp;para&nbsp;un&nbsp;multigrafo&nbsp;donde<br>
+puede&nbsp;existir&nbsp;mas&nbsp;de&nbsp;una&nbsp;rama&nbsp;entre&nbsp;dos&nbsp;nodos.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_g&nbsp;(diccionario)&nbsp;lista&nbsp;de&nbsp;adyacencia&nbsp;del&nbsp;grafo&nbsp;a&nbsp;convertir<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_mg:&nbsp;lista&nbsp;de&nbsp;adyacencia&nbsp;del&nbsp;multigrafo&nbsp;con&nbsp;las&nbsp;mismas&nbsp;ramas&nbsp;que&nbsp;d_g</tt></dd></dl>
+ <dl><dt><a name="-hijos_bp"><strong>hijos_bp</strong></a>(u, p)</dt><dd><tt>Funcion&nbsp;que&nbsp;obtiene&nbsp;los&nbsp;hijos&nbsp;de&nbsp;un&nbsp;nodo&nbsp;mediante&nbsp;un&nbsp;diccionario&nbsp;de&nbsp;padres<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;u:&nbsp;nodo&nbsp;del&nbsp;que&nbsp;queremos&nbsp;obtener&nbsp;los&nbsp;hijos<br>
+&nbsp;&nbsp;&nbsp;&nbsp;p:&nbsp;diccionario&nbsp;de&nbsp;padres<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;hijos:&nbsp;lista&nbsp;con&nbsp;los&nbsp;hijos&nbsp;de&nbsp;u</tt></dd></dl>
+ <dl><dt><a name="-init_cd"><strong>init_cd</strong></a>(d_g)</dt><dd><tt>Funcion&nbsp;que&nbsp;inicializa&nbsp;un&nbsp;conjunto&nbsp;disjunto&nbsp;vacio&nbsp;con&nbsp;los&nbsp;nodos&nbsp;de&nbsp;un&nbsp;grafo<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_g&nbsp;(diccionario)&nbsp;lista&nbsp;de&nbsp;adyacencia&nbsp;del&nbsp;grafo&nbsp;del&nbsp;que&nbsp;queremos&nbsp;obtener&nbsp;el&nbsp;conjunto&nbsp;disjunto&nbsp;inicial<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_cd:&nbsp;conjunto&nbsp;disjunto&nbsp;inicializado&nbsp;a&nbsp;-1</tt></dd></dl>
+ <dl><dt><a name="-insert_pq"><strong>insert_pq</strong></a>(d_g, q)</dt><dd><tt>Funcion&nbsp;que&nbsp;inserta&nbsp;las&nbsp;ramas&nbsp;de&nbsp;un&nbsp;grafo&nbsp;en&nbsp;una&nbsp;cola&nbsp;de&nbsp;prioridad&nbsp;ordenada&nbsp;por&nbsp;pesos&nbsp;de&nbsp;las&nbsp;ramas<br>
+de&nbsp;menor&nbsp;a&nbsp;mayor<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_g&nbsp;(diccionario)&nbsp;grafo&nbsp;del&nbsp;que&nbsp;obtener&nbsp;las&nbsp;ramas<br>
+&nbsp;&nbsp;&nbsp;&nbsp;q:&nbsp;cola&nbsp;de&nbsp;prioridad&nbsp;donde&nbsp;insertaremos&nbsp;las&nbsp;ramas</tt></dd></dl>
+ <dl><dt><a name="-kruskal"><strong>kruskal</strong></a>(d_g, fl_cc=True)</dt><dd><tt>Funcion&nbsp;que&nbsp;aplica&nbsp;el&nbsp;algoritmo&nbsp;de&nbsp;Kruskal&nbsp;a&nbsp;un&nbsp;grafo&nbsp;y&nbsp;devuelve&nbsp;el&nbsp;arbol&nbsp;abarcador&nbsp;minimo&nbsp;obtenido<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_g&nbsp;(diccionario)&nbsp;grafo&nbsp;donde&nbsp;aplicar&nbsp;el&nbsp;algoritmo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fl_cc:&nbsp;True&nbsp;si&nbsp;queremos&nbsp;aplicar&nbsp;compresion&nbsp;de&nbsp;caminos&nbsp;en&nbsp;la&nbsp;busqueda,&nbsp;False&nbsp;si&nbsp;no<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;aam:&nbsp;arbol&nbsp;abarcador&nbsp;minimo&nbsp;del&nbsp;grafo&nbsp;obtenido,&nbsp;None&nbsp;si&nbsp;el&nbsp;grafo&nbsp;no&nbsp;era&nbsp;conexo</tt></dd></dl>
+ <dl><dt><a name="-kruskal_2"><strong>kruskal_2</strong></a>(d_g, fl_cc=True)</dt><dd><tt>Funcion&nbsp;que&nbsp;aplica&nbsp;el&nbsp;algoritmo&nbsp;de&nbsp;Kruskal&nbsp;a&nbsp;un&nbsp;grafo&nbsp;y&nbsp;devuelve&nbsp;el&nbsp;arbol&nbsp;abarcador&nbsp;minimo&nbsp;obtenido&nbsp;y&nbsp;el&nbsp;tiempo&nbsp;que&nbsp;tarda&nbsp;en&nbsp;crearlo&nbsp;(solo&nbsp;el&nbsp;tiempo&nbsp;de&nbsp;creacion&nbsp;del&nbsp;mismo)<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_g&nbsp;(diccionario)&nbsp;grafo&nbsp;donde&nbsp;aplicar&nbsp;el&nbsp;algoritmo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fl_cc:&nbsp;True&nbsp;si&nbsp;queremos&nbsp;aplicar&nbsp;compresion&nbsp;de&nbsp;caminos&nbsp;en&nbsp;la&nbsp;busqueda,&nbsp;False&nbsp;si&nbsp;no<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;aam:&nbsp;arbol&nbsp;abarcador&nbsp;minimo&nbsp;del&nbsp;grafo&nbsp;obtenido,&nbsp;None&nbsp;si&nbsp;el&nbsp;grafo&nbsp;no&nbsp;era&nbsp;conexo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;time:&nbsp;tiempo&nbsp;que&nbsp;ha&nbsp;tardado&nbsp;en&nbsp;crear&nbsp;el&nbsp;AAM,&nbsp;0&nbsp;si&nbsp;el&nbsp;grafo&nbsp;no&nbsp;es&nbsp;conexo</tt></dd></dl>
+ <dl><dt><a name="-m_g_2_d_g"><strong>m_g_2_d_g</strong></a>(m_g)</dt><dd><tt>Funcion&nbsp;que&nbsp;convierte&nbsp;la&nbsp;matriz&nbsp;de&nbsp;adyacencia&nbsp;del&nbsp;grafo&nbsp;en&nbsp;un&nbsp;diccionario.<br>
+Devuelve&nbsp;un&nbsp;diccionario&nbsp;con&nbsp;cada&nbsp;nodo&nbsp;(k)&nbsp;asignado&nbsp;a&nbsp;otro&nbsp;diccionario&nbsp;(v)&nbsp;con&nbsp;los&nbsp;nodos&nbsp;destino&nbsp;(k)<br>
+y&nbsp;el&nbsp;peso&nbsp;relacionado&nbsp;(v).<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;m_g:&nbsp;matriz&nbsp;de&nbsp;adyacencia&nbsp;del&nbsp;grafo</tt></dd></dl>
+ <dl><dt><a name="-m_g_sparse_factor"><strong>m_g_sparse_factor</strong></a>(m_g)</dt><dd><tt>Funcion&nbsp;auxiliar&nbsp;de&nbsp;check_sparse_factor.<br>
+Devuelve&nbsp;el&nbsp;calculo&nbsp;de&nbsp;sparse&nbsp;factor&nbsp;de&nbsp;cada&nbsp;grafo.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;m_g:&nbsp;matriz&nbsp;de&nbsp;adyacencia&nbsp;del&nbsp;grafo</tt></dd></dl>
+ <dl><dt><a name="-min_paths"><strong>min_paths</strong></a>(d_prev)</dt><dd><tt>Funcion&nbsp;que&nbsp;devuelve&nbsp;el&nbsp;diccionario&nbsp;con&nbsp;el&nbsp;camino&nbsp;minimo&nbsp;desde&nbsp;el&nbsp;nodo&nbsp;inicial&nbsp;a&nbsp;otro&nbsp;nodo<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_prev:&nbsp;diccionario&nbsp;que&nbsp;contiene&nbsp;el&nbsp;padre&nbsp;correspondiente&nbsp;a&nbsp;cada&nbsp;vértice&nbsp;accesible.</tt></dd></dl>
+ <dl><dt><a name="-n2_log_n"><strong>n2_log_n</strong></a>(n)</dt></dl>
+ <dl><dt><a name="-nx_g_2_d_g"><strong>nx_g_2_d_g</strong></a>(nx_g)</dt><dd><tt>Funcion&nbsp;que&nbsp;pasa&nbsp;un&nbsp;grafo&nbsp;en&nbsp;formato&nbsp;Networkx&nbsp;a&nbsp;otro&nbsp;en&nbsp;formato&nbsp;diccionario.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;nx_g:&nbsp;grafo&nbsp;en&nbsp;formato&nbsp;Networkx</tt></dd></dl>
+ <dl><dt><a name="-o_a_tables"><strong>o_a_tables</strong></a>(u, d_g, p, s, o, a, c)</dt><dd><tt>Funcion&nbsp;que&nbsp;calcula&nbsp;las&nbsp;tablas&nbsp;de&nbsp;orden&nbsp;y&nbsp;ascenso&nbsp;de&nbsp;un&nbsp;grafo<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;u:&nbsp;nodo&nbsp;en&nbsp;el&nbsp;que&nbsp;comenzamos<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_g&nbsp;(diccionario)&nbsp;lista&nbsp;de&nbsp;adyacencia&nbsp;del&nbsp;grafo&nbsp;a&nbsp;estudiar<br>
+&nbsp;&nbsp;&nbsp;&nbsp;p:&nbsp;diccionario&nbsp;de&nbsp;padres<br>
+&nbsp;&nbsp;&nbsp;&nbsp;s:&nbsp;diccionario&nbsp;de&nbsp;nodos&nbsp;visitados<br>
+&nbsp;&nbsp;&nbsp;&nbsp;o,&nbsp;a:&nbsp;valores&nbsp;de&nbsp;orden&nbsp;y&nbsp;ascensos&nbsp;en&nbsp;cada&nbsp;nodo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;c:&nbsp;orden&nbsp;actual<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;c:&nbsp;orden&nbsp;actual</tt></dd></dl>
+ <dl><dt><a name="-p_o_a_driver"><strong>p_o_a_driver</strong></a>(d_g, u=0)</dt><dd><tt>Funcion&nbsp;que&nbsp;inicializa&nbsp;las&nbsp;tablas&nbsp;orden&nbsp;y&nbsp;ascenso&nbsp;de&nbsp;un&nbsp;grafo&nbsp;y&nbsp;las&nbsp;calcula<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;u:&nbsp;nodo&nbsp;en&nbsp;el&nbsp;que&nbsp;comenzamos<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_g&nbsp;(diccionario)&nbsp;lista&nbsp;de&nbsp;adyacencia&nbsp;del&nbsp;grafo&nbsp;a&nbsp;estudiar<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;p,&nbsp;o,&nbsp;a:&nbsp;padres,&nbsp;orden&nbsp;y&nbsp;ascensos&nbsp;calculados</tt></dd></dl>
+ <dl><dt><a name="-rand_matr_pos_graph"><strong>rand_matr_pos_graph</strong></a>(n_nodes, sparse_factor, max_weight=50.0, decimals=0)</dt><dd><tt>Funcion&nbsp;que&nbsp;genera&nbsp;grafos&nbsp;de&nbsp;manera&nbsp;aleatoria.<br>
+Devuelve&nbsp;la&nbsp;matriz&nbsp;de&nbsp;adyacencia&nbsp;de&nbsp;un&nbsp;grafo&nbsp;dirigido&nbsp;ponderado.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_nodes:&nbsp;numero&nbsp;de&nbsp;nodos<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sparse_factor:&nbsp;proporcion&nbsp;de&nbsp;ramas<br>
+&nbsp;&nbsp;&nbsp;&nbsp;max_weight:&nbsp;peso&nbsp;maximo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;decimals:&nbsp;numero&nbsp;de&nbsp;decimales</tt></dd></dl>
+ <dl><dt><a name="-rand_weighted_multigraph"><strong>rand_weighted_multigraph</strong></a>(n_nodes, prob=0.2, num_max_multiple_edges=1, max_weight=50.0, decimals=0, fl_unweighted=False, fl_diag=True)</dt><dd><tt>Funcion&nbsp;que&nbsp;crea&nbsp;un&nbsp;multigrafo&nbsp;dirigido&nbsp;con&nbsp;pesos&nbsp;aleatorio&nbsp;en&nbsp;funcion&nbsp;a&nbsp;los&nbsp;parametros&nbsp;de&nbsp;entrada<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_nodes:&nbsp;numero&nbsp;de&nbsp;nodos&nbsp;del&nbsp;grafo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;prob:&nbsp;probabilidad&nbsp;de&nbsp;que&nbsp;dos&nbsp;nodos&nbsp;tengan&nbsp;ramas&nbsp;entre&nbsp;si<br>
+&nbsp;&nbsp;&nbsp;&nbsp;num_max_multiple_edges:&nbsp;numero&nbsp;maximo&nbsp;de&nbsp;ramas&nbsp;entre&nbsp;dos&nbsp;nodos<br>
+&nbsp;&nbsp;&nbsp;&nbsp;max_weight:&nbsp;maximo&nbsp;peso&nbsp;de&nbsp;una&nbsp;rama<br>
+&nbsp;&nbsp;&nbsp;&nbsp;decimals:&nbsp;numero&nbsp;de&nbsp;decimales&nbsp;del&nbsp;peso<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fl_unweighted:&nbsp;si&nbsp;es&nbsp;True,&nbsp;el&nbsp;grafo&nbsp;se&nbsp;genera&nbsp;sin&nbsp;pesos&nbsp;(con&nbsp;peso&nbsp;1&nbsp;si&nbsp;existe&nbsp;rama)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fl_diag:&nbsp;True&nbsp;si&nbsp;permite&nbsp;auto&nbsp;ramas&nbsp;y&nbsp;False&nbsp;si&nbsp;no<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_mg:&nbsp;lista&nbsp;de&nbsp;adyacencia&nbsp;del&nbsp;multigrafo&nbsp;creado</tt></dd></dl>
+ <dl><dt><a name="-rand_weighted_undirected_multigraph"><strong>rand_weighted_undirected_multigraph</strong></a>(n_nodes, prob=0.2, num_max_multiple_edges=1, max_weight=50.0, decimals=0, fl_unweighted=False, fl_diag=True)</dt><dd><tt>Funcion&nbsp;que&nbsp;crea&nbsp;un&nbsp;multigrafo&nbsp;no&nbsp;dirigido&nbsp;con&nbsp;pesos&nbsp;aleatorio&nbsp;en&nbsp;funcion&nbsp;a&nbsp;los&nbsp;parametros&nbsp;de&nbsp;entrada<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_nodes:&nbsp;numero&nbsp;de&nbsp;nodos&nbsp;del&nbsp;grafo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;prob:&nbsp;probabilidad&nbsp;de&nbsp;que&nbsp;dos&nbsp;nodos&nbsp;tengan&nbsp;ramas&nbsp;entre&nbsp;si<br>
+&nbsp;&nbsp;&nbsp;&nbsp;num_max_multiple_edges:&nbsp;numero&nbsp;maximo&nbsp;de&nbsp;ramas&nbsp;entre&nbsp;dos&nbsp;nodos<br>
+&nbsp;&nbsp;&nbsp;&nbsp;max_weight:&nbsp;maximo&nbsp;peso&nbsp;de&nbsp;una&nbsp;rama<br>
+&nbsp;&nbsp;&nbsp;&nbsp;decimals:&nbsp;&nbsp;numero&nbsp;de&nbsp;decimales&nbsp;del&nbsp;peso<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fl_unweighted:&nbsp;si&nbsp;es&nbsp;True,&nbsp;el&nbsp;grafo&nbsp;se&nbsp;genera&nbsp;sin&nbsp;pesos&nbsp;(con&nbsp;peso&nbsp;1&nbsp;si&nbsp;existe&nbsp;rama)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fl_diag:&nbsp;True&nbsp;si&nbsp;permite&nbsp;auto&nbsp;ramas&nbsp;y&nbsp;False&nbsp;si&nbsp;no<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_mg:&nbsp;lista&nbsp;de&nbsp;adyacencia&nbsp;del&nbsp;multigrafo&nbsp;creado</tt></dd></dl>
+ <dl><dt><a name="-read_object"><strong>read_object</strong></a>(f_name, save_path='.')</dt><dd><tt>Funcion&nbsp;que&nbsp;lee&nbsp;un&nbsp;objeto.<br>
+Devuelve&nbsp;el&nbsp;objeto&nbsp;en&nbsp;cuestion.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;f_name:&nbsp;nombre&nbsp;del&nbsp;archivo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;save_path:&nbsp;ruta&nbsp;del&nbsp;fichero</tt></dd></dl>
+ <dl><dt><a name="-save_object"><strong>save_object</strong></a>(obj, f_name='obj.pklz', save_path='.')</dt><dd><tt>Funcion&nbsp;que&nbsp;guarda&nbsp;un&nbsp;objeto&nbsp;en&nbsp;un&nbsp;dump&nbsp;file.<br>
+Realiza&nbsp;el&nbsp;volcado&nbsp;en&nbsp;cuestion,&nbsp;en&nbsp;este&nbsp;caso,&nbsp;de&nbsp;un&nbsp;grafo.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;obj:&nbsp;objeto&nbsp;a&nbsp;guardar<br>
+&nbsp;&nbsp;&nbsp;&nbsp;f_name:&nbsp;nombre&nbsp;del&nbsp;objeto<br>
+&nbsp;&nbsp;&nbsp;&nbsp;save_path:&nbsp;ruta&nbsp;del&nbsp;archivo</tt></dd></dl>
+ <dl><dt><a name="-time_dijkstra_d"><strong>time_dijkstra_d</strong></a>(n_graphs, n_nodes_ini, n_nodes_fin, step, sparse_factor=0.25)</dt><dd><tt>Funcion&nbsp;que&nbsp;calcula&nbsp;el&nbsp;tiempo&nbsp;de&nbsp;aplicar&nbsp;Dijkstra&nbsp;a&nbsp;un&nbsp;grafo&nbsp;dado&nbsp;en&nbsp;formato&nbsp;diccionario.<br>
+Devuelve&nbsp;una&nbsp;lista&nbsp;de&nbsp;tiempos&nbsp;para&nbsp;cada&nbsp;grafo&nbsp;al&nbsp;que&nbsp;se&nbsp;le&nbsp;ha&nbsp;aplicado&nbsp;el&nbsp;algoritmo.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_graphs:&nbsp;numero&nbsp;de&nbsp;grafos&nbsp;a&nbsp;generar<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_nodes_ini:&nbsp;num&nbsp;de&nbsp;nodos&nbsp;inicial<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_nodes_fin:&nbsp;num&nbsp;de&nbsp;nodos&nbsp;final<br>
+&nbsp;&nbsp;&nbsp;&nbsp;step:&nbsp;incremento<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sparse_factor:&nbsp;factor&nbsp;proporcion&nbsp;de&nbsp;ramas</tt></dd></dl>
+ <dl><dt><a name="-time_dijkstra_m"><strong>time_dijkstra_m</strong></a>(n_graphs, n_nodes_ini, n_nodes_fin, step, sparse_factor=0.25)</dt><dd><tt>Funcion&nbsp;que&nbsp;calcula&nbsp;el&nbsp;tiempo&nbsp;de&nbsp;aplicar&nbsp;Dijkstra&nbsp;a&nbsp;un&nbsp;grafo&nbsp;dado&nbsp;en&nbsp;formato&nbsp;de&nbsp;matriz&nbsp;de&nbsp;adyacencia.<br>
+Devuelve&nbsp;una&nbsp;lista&nbsp;de&nbsp;tiempos&nbsp;para&nbsp;cada&nbsp;grafo&nbsp;al&nbsp;que&nbsp;se&nbsp;le&nbsp;ha&nbsp;aplicado&nbsp;el&nbsp;algoritmo.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_graphs:&nbsp;numero&nbsp;de&nbsp;grafos&nbsp;a&nbsp;generar<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_nodes_ini:&nbsp;num&nbsp;de&nbsp;nodos&nbsp;inicial<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_nodes_fin:&nbsp;num&nbsp;de&nbsp;nodos&nbsp;final<br>
+&nbsp;&nbsp;&nbsp;&nbsp;step:&nbsp;incremento<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sparse_factor:&nbsp;factor&nbsp;proporcion&nbsp;de&nbsp;ramas</tt></dd></dl>
+ <dl><dt><a name="-time_dijkstra_nx"><strong>time_dijkstra_nx</strong></a>(n_graphs, n_nodes_ini, n_nodes_fin, step, sparse_factor=0.25)</dt><dd><tt>Funcion&nbsp;que&nbsp;calcula&nbsp;el&nbsp;tiempo&nbsp;de&nbsp;aplicar&nbsp;Dijkstra&nbsp;a&nbsp;un&nbsp;grafo&nbsp;dado&nbsp;en&nbsp;formato&nbsp;de&nbsp;Networkx.<br>
+Devuelve&nbsp;una&nbsp;lista&nbsp;de&nbsp;tiempos&nbsp;para&nbsp;cada&nbsp;grafo&nbsp;al&nbsp;que&nbsp;se&nbsp;le&nbsp;ha&nbsp;aplicado&nbsp;el&nbsp;algoritmo.<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_graphs:&nbsp;numero&nbsp;de&nbsp;grafos&nbsp;a&nbsp;generar<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_nodes_ini:&nbsp;num&nbsp;de&nbsp;nodos&nbsp;inicial<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_nodes_fin:&nbsp;num&nbsp;de&nbsp;nodos&nbsp;final<br>
+&nbsp;&nbsp;&nbsp;&nbsp;step:&nbsp;incremento<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sparse_factor:&nbsp;factor&nbsp;proporcion&nbsp;de&nbsp;ramas</tt></dd></dl>
+ <dl><dt><a name="-time_kruskal"><strong>time_kruskal</strong></a>(n_graphs, n_nodes_ini, n_nodes_fin, step, prob, fl_cc)</dt><dd><tt>Funcion&nbsp;que&nbsp;calcula&nbsp;los&nbsp;tiempos&nbsp;medios&nbsp;de&nbsp;ejecucion&nbsp;de&nbsp;la&nbsp;funcion&nbsp;kruskal&nbsp;con&nbsp;grafos&nbsp;generados&nbsp;aleatoriamente<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_graphs:&nbsp;numnero&nbsp;de&nbsp;grafos&nbsp;a&nbsp;crear&nbsp;de&nbsp;cada&nbsp;tipo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_nodes_ini:&nbsp;numero&nbsp;de&nbsp;nodos&nbsp;inicial<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_nodes_fin:&nbsp;numero&nbsp;de&nbsp;nodos&nbsp;final<br>
+&nbsp;&nbsp;&nbsp;&nbsp;step:&nbsp;step&nbsp;de&nbsp;crecimiento&nbsp;del&nbsp;numero&nbsp;de&nbsp;nodos<br>
+&nbsp;&nbsp;&nbsp;&nbsp;prob:&nbsp;probabilidad&nbsp;de&nbsp;que&nbsp;existan&nbsp;ramas&nbsp;entre&nbsp;nodos&nbsp;de&nbsp;los&nbsp;grafos&nbsp;creados<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fl_cc:&nbsp;indica&nbsp;si&nbsp;queremos&nbsp;aplicar&nbsp;compresion&nbsp;de&nbsp;caminos&nbsp;o&nbsp;no<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;times:&nbsp;diccionario&nbsp;con&nbsp;claves&nbsp;el&nbsp;numero&nbsp;de&nbsp;nodos&nbsp;y&nbsp;valores&nbsp;el&nbsp;tiempo&nbsp;promedio&nbsp;de&nbsp;ejecucion&nbsp;de&nbsp;la&nbsp;funcion</tt></dd></dl>
+ <dl><dt><a name="-time_kruskal_2"><strong>time_kruskal_2</strong></a>(n_graphs, n_nodes_ini, n_nodes_fin, step, prob, fl_cc)</dt><dd><tt>Funcion&nbsp;que&nbsp;calcula&nbsp;los&nbsp;tiempos&nbsp;medios&nbsp;de&nbsp;ejecucion&nbsp;de&nbsp;la&nbsp;funcion&nbsp;kruskal_2&nbsp;con&nbsp;grafos&nbsp;generados&nbsp;aleatoriamente<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_graphs:&nbsp;numero&nbsp;de&nbsp;grafos&nbsp;a&nbsp;crear&nbsp;de&nbsp;cada&nbsp;tipo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_nodes_ini:&nbsp;numero&nbsp;de&nbsp;nodos&nbsp;inicial<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_nodes_fin:&nbsp;numero&nbsp;de&nbsp;nodos&nbsp;final<br>
+&nbsp;&nbsp;&nbsp;&nbsp;step:&nbsp;step&nbsp;de&nbsp;crecimiento&nbsp;del&nbsp;numero&nbsp;de&nbsp;nodos<br>
+&nbsp;&nbsp;&nbsp;&nbsp;prob:&nbsp;probabilidad&nbsp;de&nbsp;que&nbsp;existan&nbsp;ramas&nbsp;entre&nbsp;nodos&nbsp;de&nbsp;los&nbsp;grafos&nbsp;creados<br>
+&nbsp;&nbsp;&nbsp;&nbsp;fl_cc:&nbsp;indica&nbsp;si&nbsp;queremos&nbsp;aplicar&nbsp;compresion&nbsp;de&nbsp;caminos&nbsp;o&nbsp;no<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;times:&nbsp;diccionario&nbsp;con&nbsp;claves&nbsp;el&nbsp;numero&nbsp;de&nbsp;nodos&nbsp;y&nbsp;valores&nbsp;el&nbsp;tiempo&nbsp;promedio&nbsp;de&nbsp;ejecucion&nbsp;de&nbsp;la&nbsp;funcion</tt></dd></dl>
+ <dl><dt><a name="-time_pda"><strong>time_pda</strong></a>(n_graphs, n_nodes_ini, n_nodes_fin, step, prob)</dt><dd><tt>Funcion&nbsp;que&nbsp;calcula&nbsp;los&nbsp;tiempos&nbsp;medios&nbsp;de&nbsp;ejecucion&nbsp;de&nbsp;la&nbsp;funcion&nbsp;p_o_a_driver&nbsp;con&nbsp;grafos&nbsp;generados&nbsp;aleatoriamente<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_graphs:&nbsp;numnero&nbsp;de&nbsp;grafos&nbsp;a&nbsp;crear&nbsp;de&nbsp;cada&nbsp;tipo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_nodes_ini:&nbsp;numero&nbsp;de&nbsp;nodos&nbsp;inicial<br>
+&nbsp;&nbsp;&nbsp;&nbsp;n_nodes_fin:&nbsp;numero&nbsp;de&nbsp;nodos&nbsp;final<br>
+&nbsp;&nbsp;&nbsp;&nbsp;step:&nbsp;step&nbsp;de&nbsp;crecimiento&nbsp;del&nbsp;numero&nbsp;de&nbsp;nodos<br>
+&nbsp;&nbsp;&nbsp;&nbsp;prob:&nbsp;probabilidad&nbsp;de&nbsp;que&nbsp;existan&nbsp;ramas&nbsp;entre&nbsp;nodos&nbsp;de&nbsp;los&nbsp;grafos&nbsp;creados<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;times:&nbsp;diccionario&nbsp;con&nbsp;claves&nbsp;el&nbsp;numero&nbsp;de&nbsp;nodos&nbsp;y&nbsp;valores&nbsp;el&nbsp;tiempo&nbsp;promedio&nbsp;de&nbsp;ejecucion&nbsp;de&nbsp;la&nbsp;funcion</tt></dd></dl>
+ <dl><dt><a name="-union"><strong>union</strong></a>(rep_1, rep_2, d_cd)</dt><dd><tt>Funcion&nbsp;que&nbsp;une&nbsp;dos&nbsp;nodos&nbsp;en&nbsp;el&nbsp;conjunto&nbsp;disjunto<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;rep_1:&nbsp;representante&nbsp;1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;rep_2:&nbsp;representante&nbsp;2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_cd:&nbsp;conjunto&nbsp;disjunto&nbsp;donde&nbsp;queremos&nbsp;unir&nbsp;los&nbsp;dos&nbsp;representantes<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d_cd:&nbsp;conjunto&nbsp;disjunto&nbsp;nuevo</tt></dd></dl>
+</td></tr></table>
+</body></html>
