@@ -878,7 +878,9 @@ def kruskal_2(d_g, fl_cc=True):
             aam[v][u] = {0: peso}
             ramas +=1
     fin = time.time()
-    #para el caso de si no es conexo
+
+    # para el caso de si no es conexo
+    # no es conexo si hay mas de dos nodos que sean raiz del arbol abarcador min
     raiz = False
     for i in p.keys():
         if(raiz == False and p[i]<0):
@@ -923,3 +925,20 @@ def time_kruskal_2(n_graphs, n_nodes_ini, n_nodes_fin, step, prob, fl_cc):
                 n_grafos+=1
         times[n_nodos] = time_aux/n_grafos
     return times
+
+def print_d_g(d_g):
+    """Funcion que pinta un grafo en formato lista de adyacencia
+
+    Args:
+    	d_g (diccionario): diccionario con a lista de adyacencia a pintar por pantalla
+    """
+    for nodo in d_g.keys():
+        print(nodo,d_g[nodo])
+
+def print_d_mg(d_mg):
+    """Funcion que pinta un grafo en formato matriz de adyacencia
+
+    Args:
+    	d_mg (diccionario): diccionario con a matriz de adyacencia a pintar por pantalla
+    """
+    print(d_mg)
