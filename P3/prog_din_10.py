@@ -473,7 +473,6 @@ def list_opt_ordering_search_tree(m_roots, l, r):
 		Lista con el orden de insercion de las claves l, l+1, ..., r en el 
 			correspondiente arbol binario de busqueda optimo.
 	"""
-    
     if(l > r):
         return []
     elif l == r:
