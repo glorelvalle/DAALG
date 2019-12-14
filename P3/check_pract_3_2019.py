@@ -14,34 +14,35 @@ def main(n_bits, len_sc, strng, c, l_coins, l_prob):
     """
 
     print("............................. cifrado merkle-hellman:")
+    
+    min_print = min(20, n_bits)
+    
     print("generando sucesiones ...")
     l_sc = pd.gen_super_crec(len_sc)
-    min_print = 20
-    print("\nfirst %d l_sc\n" % min_print, l_sc[ : min_print])
+    print("\nfirst %d items in l_sc\n" % min_print, l_sc[ : min_print])
     
     p, q, m = pd.mod_mult_inv(l_sc)
     print("\np, q, mod\n", p, q, m)
     
     l_pub = pd.l_publica_2_l_super_crec(l_sc, p, m)
-    print("\nfirst %d l_pub\n" % min_print, l_pub[ : min_print])
+    print("\nfirst %d items in l_pub\n" % min_print, l_pub[ : min_print])
     
     _ = input("\npulsar Intro para continuar ....................\n")
     print("generando mensaje  ...")
     
-    l_bits = pd.gen_rand_bit_list(n_bits)
-    print("\nfirst %d l_bits\n" % min_print, l_bits[ : min_print])
+    l_bits = pd.gen_random_bit_list(n_bits)
+    print("\nfirst %d bits in l_bits\n" % min_print, l_bits[ : min_print])
     
     _ = input("\npulsar Intro para continuar ....................\n")
     print("cifrando y descifrando  ...")
     
     l_cifra = pd.mh_encrypt(l_bits, l_pub, m)
-    print("\nfirst %d l_cifra\n" % min_print, l_cifra[ : min_print])
+    print("\nfirst %d cifrados in l_cifra\n" % (min(min_print, len(l_cifra))), l_cifra[ : min_print])
     
     l_dec = pd.mh_decrypt(l_cifra, l_sc, q, m)
-    print("\nfirst %d l_desc\n" % min_print, l_dec[ : min_print])
+    print("\nfirst %d bits in l_desc\n" % min_print, l_dec[ : min_print])
     
-    len_l_pub = len(l_pub)
-    print("\ndif_cifrado_descifrado", (np.array(l_bits[ : n_bits - len_l_pub]) - np.array(l_dec[ : n_bits - len_l_pub])).sum())
+    print("\ndif_cifrado_descifrado", (np.array(l_bits[ : n_bits]) - np.array(l_dec[ : n_bits])).sum())
     
     _ = input("\npulsar Intro para continuar ....................\n")
     print("............................. longest_common_subsequence")
@@ -53,7 +54,7 @@ def main(n_bits, len_sc, strng, c, l_coins, l_prob):
     
     _ = input("\npulsar Intro para continuar ....................\n")
     print("............................. search_tree")
-    m_cost, m_order = pd.opt_ordering_search_tree(l_prob)
+    m_cost, m_order = pd.optimal_order(l_prob)
     print("roots_matrix:")
     print(m_order)
     
