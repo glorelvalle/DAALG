@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module prog_din_10</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>prog_din_10</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/giogiasvalley/Desktop/Computer%20Science/Subjects/DAALG/P3/prog_din_10.py">/Users/giogiasvalley/Desktop/Computer Science/Subjects/DAALG/P3/prog_din_10.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="random.html">random</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-find_max_common_subsequence"><strong>find_max_common_subsequence</strong></a>(str_1, str_2)</dt><dd><tt>Encuentra&nbsp;la&nbsp;subsecuencia&nbsp;común&nbsp;de&nbsp;longitud&nbsp;máxima<br>
+Devuelve&nbsp;la&nbsp;subsecuencia&nbsp;común&nbsp;de&nbsp;longitud&nbsp;máxima<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str_1:&nbsp;cadena&nbsp;1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str_2:&nbsp;cadena&nbsp;2<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cad:&nbsp;array&nbsp;que&nbsp;contiene&nbsp;la&nbsp;subsecuencia&nbsp;común&nbsp;máxima</tt></dd></dl>
+ <dl><dt><a name="-gen_random_bit_list"><strong>gen_random_bit_list</strong></a>(n_bits)</dt><dd><tt>Funcion&nbsp;que&nbsp;genera&nbsp;una&nbsp;lista&nbsp;aleatoria&nbsp;de&nbsp;bits<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n_bits&nbsp;(int):&nbsp;numero&nbsp;de&nbsp;bits&nbsp;que&nbsp;contendra&nbsp;la&nbsp;lista&nbsp;generada&nbsp;<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l_bits&nbsp;(lista):&nbsp;lista&nbsp;de&nbsp;bits&nbsp;generada</tt></dd></dl>
+ <dl><dt><a name="-gen_sucesion_publica"><strong>gen_sucesion_publica</strong></a>(l_sc, p, mod)</dt><dd><tt>Funcion&nbsp;que&nbsp;calcula&nbsp;una&nbsp;clave&nbsp;publica&nbsp;en&nbsp;funcion&nbsp;a&nbsp;una&nbsp;privada,&nbsp;un&nbsp;multiplicador&nbsp;y&nbsp;un&nbsp;modulo<br>
+Devuelve&nbsp;la&nbsp;clave&nbsp;privada<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l_sc&nbsp;(lista):&nbsp;lista&nbsp;que&nbsp;contiene&nbsp;la&nbsp;clave&nbsp;privada<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p&nbsp;(int):&nbsp;multiplicador<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mod&nbsp;(int):&nbsp;aritmetica&nbsp;a&nbsp;utilizar&nbsp;<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l_pub&nbsp;(lista):&nbsp;clave&nbsp;publica&nbsp;de&nbsp;la&nbsp;clave&nbsp;privada&nbsp;recibida&nbsp;calculada</tt></dd></dl>
+ <dl><dt><a name="-gen_super_crec"><strong>gen_super_crec</strong></a>(n_terms)</dt><dd><tt>Genera&nbsp;una&nbsp;sucesion&nbsp;supercreciente&nbsp;aleatoria<br>
+Devuelve&nbsp;la&nbsp;sucesion&nbsp;generada<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n_terms&nbsp;(int):&nbsp;numero&nbsp;de&nbsp;terminos&nbsp;que&nbsp;tendra&nbsp;la&nbsp;sucesion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ssc&nbsp;(lista):&nbsp;lista&nbsp;que&nbsp;contiene&nbsp;los&nbsp;numeros&nbsp;de&nbsp;la&nbsp;sucesion&nbsp;supercreciente</tt></dd></dl>
+ <dl><dt><a name="-get_min_tree"><strong>get_min_tree</strong></a>(m, L, R)</dt><dd><tt>Funcion&nbsp;que&nbsp;encuentra&nbsp;el&nbsp;arbol&nbsp;minimo&nbsp;entre&nbsp;L&nbsp;y&nbsp;R&nbsp;probando&nbsp;todas&nbsp;las&nbsp;raices&nbsp;posibles<br>
+y&nbsp;usando&nbsp;la&nbsp;matriz&nbsp;m<br>
+Devuelve&nbsp;el&nbsp;valor&nbsp;minimo&nbsp;de&nbsp;C(T&nbsp;LR)<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m&nbsp;(np.matrix):&nbsp;matriz&nbsp;que&nbsp;contiene&nbsp;los&nbsp;subarboles&nbsp;minimos<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L&nbsp;(int):&nbsp;nodo&nbsp;izquierdo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R&nbsp;(int):&nbsp;nodo&nbsp;derecho<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(float):&nbsp;valor&nbsp;del&nbsp;coste&nbsp;minimo&nbsp;del&nbsp;arbol&nbsp;entre&nbsp;L&nbsp;y&nbsp;R</tt></dd></dl>
+ <dl><dt><a name="-inverse"><strong>inverse</strong></a>(p, mod)</dt><dd><tt>Funcion&nbsp;que&nbsp;calcula&nbsp;el&nbsp;inverso&nbsp;multiplicativo&nbsp;de&nbsp;p&nbsp;en&nbsp;Zmod<br>
+Esta&nbsp;funcion&nbsp;utiliza&nbsp;el&nbsp;algoritmo&nbsp;de&nbsp;Euclides&nbsp;extendido&nbsp;con&nbsp;el&nbsp;cual&nbsp;calculamos:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;=&nbsp;u*mod+v*p<br>
+donde&nbsp;v&nbsp;es&nbsp;el&nbsp;inverso&nbsp;multiplicativo&nbsp;de&nbsp;p&nbsp;en&nbsp;Zmod.<br>
+Devuelve&nbsp;el&nbsp;inverso&nbsp;multiplicativo&nbsp;en&nbsp;caso&nbsp;de&nbsp;que&nbsp;exista,&nbsp;y&nbsp;-1&nbsp;si&nbsp;no&nbsp;existe<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p&nbsp;(int):&nbsp;numero&nbsp;del&nbsp;que&nbsp;obtener&nbsp;el&nbsp;inverso&nbsp;multiplicativo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mod&nbsp;(int):&nbsp;modulo&nbsp;en&nbsp;el&nbsp;que&nbsp;calcular&nbsp;el&nbsp;inverso&nbsp;multiplicativo<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vi&nbsp;(int):&nbsp;inverso&nbsp;multiplicativo&nbsp;de&nbsp;p&nbsp;en&nbsp;Zmod,&nbsp;-1&nbsp;si&nbsp;no&nbsp;existe</tt></dd></dl>
+ <dl><dt><a name="-l_publica_2_l_super_crec"><strong>l_publica_2_l_super_crec</strong></a>(l_pub, q, mod)</dt><dd><tt>Funcion&nbsp;que&nbsp;calcula&nbsp;una&nbsp;clave&nbsp;privada&nbsp;en&nbsp;funcion&nbsp;a&nbsp;una&nbsp;publica,&nbsp;un&nbsp;inverso&nbsp;y&nbsp;un&nbsp;modulo<br>
+Devuelve&nbsp;la&nbsp;clave&nbsp;privada<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l_pub&nbsp;(lista):&nbsp;lista&nbsp;que&nbsp;contiene&nbsp;la&nbsp;clave&nbsp;publica<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;q&nbsp;(int):&nbsp;inverso<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mod&nbsp;(int):&nbsp;aritmetica&nbsp;a&nbsp;utilizar&nbsp;<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l_sc&nbsp;(lista):&nbsp;clave&nbsp;privada&nbsp;calculada&nbsp;(lista&nbsp;supercreciente)</tt></dd></dl>
+ <dl><dt><a name="-list_opt_ordering_search_tree"><strong>list_opt_ordering_search_tree</strong></a>(m_roots, l, r)</dt><dd><tt>Funcion&nbsp;que&nbsp;encuentra&nbsp;la&nbsp;lista&nbsp;con&nbsp;el&nbsp;orden&nbsp;de&nbsp;insercion&nbsp;de&nbsp;las&nbsp;claves&nbsp;l,&nbsp;l+1,&nbsp;...,&nbsp;r&nbsp;en&nbsp;el&nbsp;BST<br>
+Devuelve&nbsp;la&nbsp;lista<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_roots(np.matrix):&nbsp;la&nbsp;matriz&nbsp;de&nbsp;raices&nbsp;devuelta&nbsp;por&nbsp;la&nbsp;funcion&nbsp;optimal_order<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l:&nbsp;indices&nbsp;l&nbsp;(izquierdo)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;r:&nbsp;indices&nbsp;r&nbsp;(derecho)<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lista&nbsp;con&nbsp;el&nbsp;orden&nbsp;de&nbsp;insercion&nbsp;de&nbsp;las&nbsp;claves&nbsp;l,&nbsp;l+1,&nbsp;...,&nbsp;r&nbsp;en&nbsp;el&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;correspondiente&nbsp;arbol&nbsp;binario&nbsp;de&nbsp;busqueda&nbsp;optimo.</tt></dd></dl>
+ <dl><dt><a name="-max_length_common_subsequence"><strong>max_length_common_subsequence</strong></a>(str_1, str_2)</dt><dd><tt>Calcula&nbsp;la&nbsp;matriz&nbsp;de&nbsp;subsecuencia&nbsp;común&nbsp;más&nbsp;larga&nbsp;entre&nbsp;dos&nbsp;cadenas<br>
+Devuelve&nbsp;la&nbsp;matriz&nbsp;de&nbsp;longitudes&nbsp;de&nbsp;subsecuencias&nbsp;máximas&nbsp;comunes&nbsp;parciales<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str_1:&nbsp;cadena&nbsp;1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str_2:&nbsp;cadena&nbsp;2<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m:&nbsp;matriz&nbsp;de&nbsp;longitudes&nbsp;de&nbsp;subsecuencias&nbsp;máximas&nbsp;comunes&nbsp;parciales</tt></dd></dl>
+ <dl><dt><a name="-max_matrix_common_subsequence"><strong>max_matrix_common_subsequence</strong></a>(str_1, str_2)</dt><dd><tt>Calcula&nbsp;la&nbsp;matriz&nbsp;de&nbsp;subsecuencia&nbsp;común&nbsp;más&nbsp;larga&nbsp;entre&nbsp;dos&nbsp;cadenas<br>
+Devuelve&nbsp;la&nbsp;matriz&nbsp;de&nbsp;longitudes&nbsp;de&nbsp;subsecuencias&nbsp;máximas&nbsp;comunes&nbsp;parciales<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str_1:&nbsp;cadena&nbsp;1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;str_2:&nbsp;cadena&nbsp;2<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m:&nbsp;matriz&nbsp;de&nbsp;longitudes&nbsp;de&nbsp;subsecuencias&nbsp;máximas&nbsp;comunes&nbsp;parciales</tt></dd></dl>
+ <dl><dt><a name="-mcd"><strong>mcd</strong></a>(a, b)</dt><dd><tt>Calcula&nbsp;el&nbsp;maximo&nbsp;comun&nbsp;divisor&nbsp;entre&nbsp;a&nbsp;y&nbsp;b&nbsp;utilizando&nbsp;el&nbsp;algoritmo&nbsp;de&nbsp;euclides<br>
+Devuelve&nbsp;el&nbsp;maximo&nbsp;comun&nbsp;divisor&nbsp;entre&nbsp;ambos&nbsp;numeros<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a&nbsp;(int):&nbsp;primer&nbsp;numero<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b&nbsp;(int):&nbsp;segundo&nbsp;numero<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mcd&nbsp;(int):&nbsp;maximo&nbsp;comun&nbsp;divisor&nbsp;entre&nbsp;a&nbsp;y&nbsp;b</tt></dd></dl>
+ <dl><dt><a name="-mh_block_decrypt"><strong>mh_block_decrypt</strong></a>(c, l_sc, inv, mod)</dt><dd><tt>Funcion&nbsp;que&nbsp;descifra&nbsp;un&nbsp;entero&nbsp;utilizando&nbsp;una&nbsp;clave&nbsp;privada,&nbsp;un&nbsp;inverso&nbsp;y&nbsp;el&nbsp;modulo<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;(int):&nbsp;entero&nbsp;que&nbsp;contiene&nbsp;un&nbsp;bloque&nbsp;cifrado<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l_sc&nbsp;(lista):&nbsp;lista&nbsp;supercreciente&nbsp;con&nbsp;la&nbsp;clave&nbsp;privada<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inv&nbsp;(int):&nbsp;inverso<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mod&nbsp;(int):&nbsp;aritmetica&nbsp;a&nbsp;utilizar&nbsp;<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decrypted_block&nbsp;(lista):&nbsp;lista&nbsp;de&nbsp;bits&nbsp;con&nbsp;el&nbsp;bloque&nbsp;descifrado</tt></dd></dl>
+ <dl><dt><a name="-mh_decrypt"><strong>mh_decrypt</strong></a>(l_cifra, l_sc, inv, mod)</dt><dd><tt>Funcion&nbsp;que&nbsp;descifra&nbsp;un&nbsp;texto&nbsp;cifrado&nbsp;utilizando&nbsp;una&nbsp;clave&nbsp;privada,&nbsp;un&nbsp;inverso&nbsp;y&nbsp;el&nbsp;modulo<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l_cifra:&nbsp;lista&nbsp;que&nbsp;contiene&nbsp;los&nbsp;bloques&nbsp;cifrados&nbsp;(texto&nbsp;completo)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l_sc&nbsp;(lista):&nbsp;lista&nbsp;supercreciente&nbsp;con&nbsp;la&nbsp;clave&nbsp;privada<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inv&nbsp;(int):&nbsp;inverso<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mod&nbsp;(int):&nbsp;aritmetica&nbsp;a&nbsp;utilizar&nbsp;<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;blocks&nbsp;(lista):&nbsp;lista&nbsp;de&nbsp;bits&nbsp;con&nbsp;el&nbsp;texto&nbsp;descifrado</tt></dd></dl>
+ <dl><dt><a name="-mh_encrypt"><strong>mh_encrypt</strong></a>(l_bits, l_pub, mod)</dt><dd><tt>Funcion&nbsp;que&nbsp;cifra&nbsp;una&nbsp;cadena&nbsp;de&nbsp;bits&nbsp;utilizando&nbsp;una&nbsp;clave&nbsp;publica&nbsp;y&nbsp;el&nbsp;modulo<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l_bits&nbsp;(lista):&nbsp;lista&nbsp;de&nbsp;bits&nbsp;a&nbsp;cifrar<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l_pub&nbsp;(lista):&nbsp;lista&nbsp;que&nbsp;contiene&nbsp;la&nbsp;clave&nbsp;publica<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mod&nbsp;(int):&nbsp;aritmetica&nbsp;a&nbsp;utilizar&nbsp;<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;encrypted_blocks&nbsp;(lista):&nbsp;lista&nbsp;de&nbsp;enteros&nbsp;donde&nbsp;cada&nbsp;entero&nbsp;contiene&nbsp;un&nbsp;bloque&nbsp;cifrado</tt></dd></dl>
+ <dl><dt><a name="-min_coin_dict"><strong>min_coin_dict</strong></a>(c, l_coins)</dt><dd><tt>Calcula&nbsp;el&nbsp;diccionario&nbsp;para&nbsp;el&nbsp;numero&nbsp;minimo&nbsp;de&nbsp;monedas&nbsp;de&nbsp;l_coin&nbsp;necesarias&nbsp;para&nbsp;dar&nbsp;cambio&nbsp;de&nbsp;una&nbsp;cantidad&nbsp;c.<br>
+Devuelve&nbsp;la&nbsp;matriz&nbsp;con&nbsp;las&nbsp;subsoluciones&nbsp;hasta&nbsp;el&nbsp;cambio&nbsp;final<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;(int):&nbsp;cantidad&nbsp;a&nbsp;dar&nbsp;cambio<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l_coins&nbsp;(lista):&nbsp;lista&nbsp;de&nbsp;enteros&nbsp;positivos&nbsp;que&nbsp;contiene&nbsp;las&nbsp;monedas<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m:&nbsp;matriz&nbsp;necesaria&nbsp;para&nbsp;la&nbsp;obtención&nbsp;del&nbsp;mínimo&nbsp;número&nbsp;de&nbsp;monedas&nbsp;para&nbsp;dar&nbsp;cambio&nbsp;de&nbsp;una&nbsp;cantidad&nbsp;c</tt></dd></dl>
+ <dl><dt><a name="-min_coin_number"><strong>min_coin_number</strong></a>(c, l_coins)</dt><dd><tt>Calcula&nbsp;el&nbsp;numero&nbsp;minimo&nbsp;de&nbsp;monedas&nbsp;de&nbsp;l_coin&nbsp;necesarias&nbsp;para&nbsp;dar&nbsp;cambio&nbsp;de&nbsp;una&nbsp;cantidad&nbsp;c.<br>
+Devuelve&nbsp;el&nbsp;valor&nbsp;calculado<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;(int):&nbsp;cantidad&nbsp;a&nbsp;dar&nbsp;cambio<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l_coins&nbsp;(lista):&nbsp;lista&nbsp;de&nbsp;enteros&nbsp;positivos&nbsp;que&nbsp;contiene&nbsp;las&nbsp;monedas<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m[i][j]&nbsp;(int):&nbsp;mínimo&nbsp;número&nbsp;de&nbsp;monedas&nbsp;para&nbsp;dar&nbsp;cambio&nbsp;de&nbsp;una&nbsp;cantidad&nbsp;c</tt></dd></dl>
+ <dl><dt><a name="-mod_mult_inv"><strong>mod_mult_inv</strong></a>(l_sc)</dt><dd><tt>Funcion&nbsp;que&nbsp;calcula&nbsp;un&nbsp;multiplicador,&nbsp;su&nbsp;inverso&nbsp;y&nbsp;el&nbsp;modulo&nbsp;de&nbsp;la&nbsp;aritmetica&nbsp;en&nbsp;funcion<br>
+a&nbsp;una&nbsp;clave&nbsp;privada<br>
+Devuelve&nbsp;los&nbsp;tres&nbsp;valores&nbsp;mencionados.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l_sc&nbsp;(lista):&nbsp;lista&nbsp;que&nbsp;contiene&nbsp;la&nbsp;clave&nbsp;privada<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mul&nbsp;(int):&nbsp;multiplicador&nbsp;cuyo&nbsp;valor&nbsp;va&nbsp;entre&nbsp;1&nbsp;y&nbsp;mod/2<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;inv&nbsp;(int):&nbsp;inverso&nbsp;multiplicativo&nbsp;de&nbsp;mul&nbsp;en&nbsp;Zmod<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mod&nbsp;(int):&nbsp;aritmetica&nbsp;a&nbsp;utilizar</tt></dd></dl>
+ <dl><dt><a name="-multiplier"><strong>multiplier</strong></a>(mod, mult_ini)</dt><dd><tt>Funcion&nbsp;que&nbsp;calcula&nbsp;el&nbsp;multiplicador&nbsp;cuyo&nbsp;valor&nbsp;va&nbsp;entre&nbsp;1&nbsp;y&nbsp;mod/2.<br>
+Devuelve&nbsp;el&nbsp;multiplicador.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mod&nbsp;(int):&nbsp;modulo&nbsp;para&nbsp;el&nbsp;calculo&nbsp;del&nbsp;multiplicador<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mult_ini:&nbsp;valor&nbsp;de&nbsp;inicializacion&nbsp;(random)<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i(int):&nbsp;valor&nbsp;del&nbsp;multiplicador&nbsp;actualizado</tt></dd></dl>
+ <dl><dt><a name="-optimal_change"><strong>optimal_change</strong></a>(c, l_coins)</dt><dd><tt>Calcula&nbsp;el&nbsp;numero&nbsp;optimo&nbsp;de&nbsp;monedas&nbsp;de&nbsp;l_coin&nbsp;necesarias&nbsp;para&nbsp;dar&nbsp;cambio&nbsp;de&nbsp;una&nbsp;cantidad&nbsp;c<br>
+Devuelve&nbsp;un&nbsp;diccionario&nbsp;con&nbsp;las&nbsp;monedas&nbsp;de&nbsp;cada&nbsp;tipo&nbsp;en&nbsp;l_coin&nbsp;necesarias&nbsp;para&nbsp;dar&nbsp;cambio&nbsp;de&nbsp;una&nbsp;cantidad&nbsp;c<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c&nbsp;(int):&nbsp;cantidad&nbsp;a&nbsp;dar&nbsp;cambio<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l_coins&nbsp;(lista):&nbsp;lista&nbsp;de&nbsp;enteros&nbsp;positivos&nbsp;que&nbsp;contiene&nbsp;las&nbsp;monedas<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d:&nbsp;diccionario&nbsp;con&nbsp;el&nbsp;número&nbsp;de&nbsp;monedas&nbsp;necesario&nbsp;para&nbsp;dar&nbsp;cambio&nbsp;de&nbsp;una&nbsp;cantidad&nbsp;c</tt></dd></dl>
+ <dl><dt><a name="-optimal_order"><strong>optimal_order</strong></a>(l_probs)</dt><dd><tt>Funcion&nbsp;que&nbsp;encuentra&nbsp;el&nbsp;arbol&nbsp;minimo&nbsp;entre&nbsp;L&nbsp;y&nbsp;R&nbsp;probando&nbsp;todas&nbsp;las&nbsp;raices&nbsp;posibles<br>
+y&nbsp;usando&nbsp;la&nbsp;matriz&nbsp;m<br>
+Devuelve&nbsp;el&nbsp;valor&nbsp;minimo&nbsp;de&nbsp;C(T&nbsp;LR)<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;l_probs&nbsp;(lista):&nbsp;lista&nbsp;con&nbsp;las&nbsp;probabilidades&nbsp;de&nbsp;cada&nbsp;nodo&nbsp;a&nbsp;insertar&nbsp;en&nbsp;el&nbsp;arbol<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m&nbsp;(np.matrix):&nbsp;matriz&nbsp;con&nbsp;los&nbsp;costes&nbsp;minimos&nbsp;de&nbsp;los&nbsp;subarboles</tt></dd></dl>
+</td></tr></table>
+</body></html>
